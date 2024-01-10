@@ -18,10 +18,14 @@ int main()
     cin>>to_find;
 
     int low=0,high=n-1,mid;
-
+int i=0;
     while((high-low)>1)
     {
+        i++;
+        cout<<i<<endl;
+        cout<<"low high : "<<low<<"  "<<high<<endl;
         mid=(high+low)/2;
+        cout<<"mid : "<<mid<<endl;
         if(v[mid]<to_find)
         {
             low=mid+1;
@@ -29,6 +33,7 @@ int main()
         else{
             high=mid;
         }
+        cout<<"01low high : "<<low<<"  "<<high<<endl;
     }
     if(v[low]==to_find) cout<<low<<endl;
     else if(v[high]==to_find)cout<<high<<endl;
