@@ -31,7 +31,7 @@ int i=0;
             low=mid+1;
         }
         else{
-            high=mid;
+            high=mid; //why not h=m-1; ??
         }
         cout<<"01low high : "<<low<<"  "<<high<<endl;
     }
